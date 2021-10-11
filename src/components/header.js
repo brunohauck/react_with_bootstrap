@@ -24,7 +24,7 @@ export default function Header() {
                 <NavItem className="d-flex align-items-center">
                     <NavLink
                         className="font-weight-bold"
-                        href="/allusers"
+                        href="/users"
                     >
                         Users
                     </NavLink>

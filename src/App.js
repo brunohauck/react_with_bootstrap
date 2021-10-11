@@ -1,8 +1,10 @@
 import './App.css';
-import Users from './pages/users'
+import Routes from './pages/route/route'
 function App() {
   return (
-    <Users />
+    <div>
+      <Routes />
+    </div>
   );
 }
 

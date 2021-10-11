@@ -118,6 +118,10 @@ class FormUser extends Component {
         );
     }
 }
+/*
+Styling with Style Objects
+CSS
+*/
 const buttonStyle = {
     width: "25rem",
     marginTop: "20px",

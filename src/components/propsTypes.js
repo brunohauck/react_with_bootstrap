@@ -7,7 +7,7 @@ class MyComponent extends React.Component {
     const name = this.props.name;
     return (
       <div>
-        Meu nome é {name} !
+        Meu nome é {this.props.name} !
       </div>
     );
   }
