@@ -31,24 +31,40 @@ class FormUser extends Component {
     }
     register = () => {
         //alert("Great Shot!");
-    
-    
+
+
         let user = { name: this.state.name, email: this.state.email, password: this.state.password }
         let users = this.state.users
         users.push(user)
         this.setState({
             users: users
         })
-        
+
         console.log(this.state.users)
     }
     render() {
 
         return (
-            <>
+
+
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    Nome:
+                    <input type="text" value={this.state.value} onChange={this.handleChange} />
+                </label>
+                <input type="submit" value="Enviar" />
+            </form>
+
+        );
+    }
+}
+/*
+Styling with Style Objects
+CSS
+
+ <>
             <Container className="AppLogin">
-                <h2>{this.state.title}</h2>
-                
+                <h2>{this.state.title}</h2>   
                     <Col>
                         <FormGroup>
                             <Label>Name</Label>
@@ -111,16 +127,10 @@ class FormUser extends Component {
                             >Cadastrar</Button>
                         </FormGroup>
                     </Col>
-                
             </Container>
             <UserList users={this.state.users}/>
             </>
-        );
-    }
-}
-/*
-Styling with Style Objects
-CSS
+
 */
 const buttonStyle = {
     width: "25rem",
